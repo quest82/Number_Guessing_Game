@@ -1,0 +1,213 @@
+/* 
+CSS RESET
+*/
+
+/* 
+CSS RESET
+ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/*
+  8. Remove underline from anchor links
+*/
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+/* 
+MOBILE VIEW 
+*/
+
+body {
+	background-color: rgba(212, 207, 207, 0.692);
+	color: rgb(59, 56, 56);
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 1.8em 1.4em;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
+
+.main__rules {
+    display: none;
+}
+
+/* .main__game {
+	display: none;
+} */
+
+/* Layout */
+
+ol {
+	margin-bottom: 2em;
+	padding: 0 1em;
+}
+
+.main__rules__list {
+    margin-bottom: .9em;
+    line-height: 1.7;
+}
+
+.main__game__form {
+	margin-bottom: 0.7em;
+}
+
+input,
+label {
+	width: 100%;
+	padding: 0.4em;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+}
+
+input[type="text"] {
+	margin-bottom: 0.8em;
+}
+
+.main__game__choice {
+	margin-bottom: 1em;
+	justify-content: center;
+}
+
+.main__game__choice__guess {
+	list-style-type: none;
+	margin-right: 1em;
+}
+
+.main__game__board {
+    justify-content: space-around;
+    margin-bottom: .8em;
+}
+
+/* Typography */
+
+.main__title {
+	font-size: 1.9rem;
+	line-height: 1.4;
+	margin-bottom: 0.5em;
+}
+
+.main__game__rule {
+	margin-bottom: 0.87em;
+}
+
+.main__rules__title {
+	margin-bottom: 0.6em;
+}
+
+.main__game__status {
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+.rounds {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: .7em;
+}
+
+.score span,
+.tries span {
+    color: rgb(45, 156, 156);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.previousGuesses {
+	margin-bottom: 0.3em;
+	font-size: 1.3rem;
+}
+
+
+
+/* Assets */
+
+.btn {
+	background-color: rgb(32, 9, 82);
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition-property: background-color;
+	transition-duration: 200ms;
+	transition-timing-function: ease-in;
+}
+
+.btn:hover {
+	background-color: rgba(35, 10, 90, 0.678);
+}
+
+.giveUpBtn,
+.startBtn {
+	padding: 0.2em 3em;
+	border-radius: 7px;
+	margin-bottom: 0.8em;
+}

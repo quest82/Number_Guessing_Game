@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Number Guessing Game</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./app.js" defer></script>
+	</head>
+	<body>
+		<main class="main">
+			<h1 class="main__title">Welcome To The Number Guessing Game</h1>
+            <section class="main__final">
+                
+            </section>
+			<section class="main__rules">
+				<h2 class="main__rules__title">Here are the rules of engagement</h2>
+
+				<ol>
+					<li class="main__rules__list">
+						You are required to guess the hidden number within 5 turns
+					</li>
+					<li class="main__rules__list">
+						Enter a number between 1 - 30 into the field provided.
+					</li>
+					<li class="main__rules__list">
+						If your guess is correct, you will be told.
+					</li>
+					<li class="main__rules__list">
+						If your guess is wrong, you will be told if it's too low or too
+						high.
+					</li>
+					<li class="main__rules__list">
+						You have 5 turns per round and can play 5 rounds before the
+						session restarts
+					</li>
+					<li class="main__rules__list">
+						You win 20 points for every round you guess correctly and a maximum
+						of 100 points per session
+					</li>
+					<li class="main__rules__list">
+						The give up button will end the game, give you the number to be
+						guessed and start a new session
+					</li>
+					<li class="main__rules__list">Click start to begin</li>
+				</ol>
+				<button class="startBtn btn">START</button>
+			</section>
+
+			<section class="main__game">
+				<p class="main__game__rule">
+					We have selected a random number between 1 and 30. See if you can
+					guess it in 5 turns or fewer. We'll tell you if your guess was too
+					high or too low.
+				</p>
+                <p class="rounds">Round <span>1</span></p>
+                <div class="main__game__board flex">
+                    <p class="score">Score: <span>0</span>/100</p>
+                    <p class="tries">You have <span>5</span> tries left</p>
+                </div>
+
+				<form action="" class="main__game__form">
+					<input type="text" id="guess" name="guess" required />
+					<input type="submit" class="btn" value="Submit guess" />
+				</form>
+				<p class="main__game__status"></p>
+				<h2 class="previousGuesses">Previous Guesses</h2>
+				<ul class="main__game__choice flex">
+					<li class="main__game__choice__guess">13</li>
+					<li class="main__game__choice__guess">22</li>
+					<li class="main__game__choice__guess">10</li>
+					<li class="main__game__choice__guess">13</li>
+					<li class="main__game__choice__guess">12</li>
+				</ul>
+
+				<button class="btn giveUpBtn">Give Up</button>
+				<p class="hidden">The number you were looking for is: 25</p>
+			</section>
+		</main>
+	</body>
+</html>
