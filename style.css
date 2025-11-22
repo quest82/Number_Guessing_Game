@@ -81,8 +81,7 @@ MOBILE VIEW
 body {
 	background-color: rgba(212, 207, 207, 0.692);
 	color: rgb(59, 56, 56);
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: "Lucida Sans";
 }
 
 .main {
@@ -95,10 +94,6 @@ body {
 
 .flex {
 	display: flex;
-}
-
-.main__game {
-	display: none;
 }
 
 .main__final {
@@ -116,11 +111,6 @@ body {
 ol {
 	margin-bottom: 2em;
 	padding: 0 1em;
-}
-
-.main__rules__list {
-	margin-bottom: 0.9em;
-	line-height: 1.7;
 }
 
 .main__game__form {
@@ -148,6 +138,11 @@ input[type="text"] {
 .main__game__choice__guess {
 	list-style-type: none;
 	margin-right: 1em;
+}
+
+.main__game__hint {
+	margin: .6em 0;
+	display: none;
 }
 
 .main__game__board {

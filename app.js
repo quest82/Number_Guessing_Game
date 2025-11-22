@@ -1,9 +1,9 @@
-const startBtn = document.querySelector(".startBtn");
 const reloadBtn = document.querySelector(".reloadBtn");
 const retryBtn = document.querySelector(".retryBtn");
 const game = document.querySelector(".main__game");
 const gameForm = document.querySelector(".main__game__form");
 const gameStatus = document.querySelector(".main__game__status");
+const gameHint = document.querySelector('.main__game__hint')
 const gameRounds = document.querySelector(".rounds span");
 const gameTries = document.querySelector(".tries span");
 const gameScore = document.querySelector(".score span");
@@ -19,7 +19,6 @@ let rounds = parseInt(gameRounds.textContent);
 let guessIndex = 0;
 
 // EVENT LISTENERS
-startBtn.addEventListener("click", startGame); // This event takes user to the game page
 
 gameForm.addEventListener("submit", (e) => {
 	// Events that occur after submission
@@ -63,6 +62,7 @@ gameForm.addEventListener("submit", (e) => {
 		gameScore.textContent = `${(score += 20)}`;
 		gameRounds.textContent = `${(rounds += 1)}`;
 		reinitNumber();
+
 	}
 
 	// 
